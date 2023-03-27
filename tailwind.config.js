@@ -4,6 +4,10 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      colors: {
+        "dark-grey": "#757575",
+        "orange": "#FFA500"
+      },
       fontFamily: {
         roboto: ["Roboto Mono", "serif"],
         opensans: ["Open Sans", "sans-serif"]
