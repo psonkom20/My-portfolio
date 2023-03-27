@@ -18,19 +18,26 @@ const Landing = ({setSelectedPage}) => {
                 ) : (
                 <img alt="profile" className="hover:animate-bounce z-10 w-full max-w-[400px] md:max-w-[600px]" src="../assets/profile.png" />
                 )}
-
-                {/* MAIN SECTION */}
-                <div className="z-30 basis-2/5 mt-12 md:mt-32">
-                    {/* HEADING */}
-                    <motion.div>
-
-                    </motion.div>
-
-                </div>
-
-
             </div>
 
+            {/* MAIN SECTION */}
+            <div className="z-30 basis-2/5 mt-12 md:mt-32">
+                {/* HEADING */}
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants= {{
+                    hidden: {opacity: 0, x: -50},
+                    visible: {opacity: 1, x: 0}
+                }}
+                >
+                    <p className="text-6xl font-roboto z-10 text-center md:text-start">Panisara Sonkom</p>
+
+                </motion.div>
+
+            </div>
         </section>
     )
 

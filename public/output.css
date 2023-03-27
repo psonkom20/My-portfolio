@@ -561,6 +561,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -628,6 +632,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-3{
@@ -748,6 +756,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-roboto{
   font-family: Roboto Mono, serif;
 }
@@ -765,6 +777,11 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -941,6 +958,17 @@ body,
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (min-width: 480px){
+  .xs\:relative{
+    position: relative;
+  }
+
+  .xs\:text-black{
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 1060px){
   .md\:order-2{
     order: 2;
@@ -968,5 +996,9 @@ body,
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 }
