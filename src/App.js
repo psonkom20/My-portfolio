@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar"
 import DotGroup from "./components/DotGroup"
 import Landing from "./components/Landing"
+import LineDivider from "./components/LineDivider"
+import MySkills from "./components/MySkills"
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery"
 
@@ -36,6 +38,10 @@ function App() {
         />
       )}
       <Landing setSelectedPage={setSelectedPage} />
+    </div>
+    <LineDivider />
+    <div className="w-5/6 mx-auto md:h-full">
+      <MySkills />
     </div>
   </div>
 

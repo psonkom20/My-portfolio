@@ -22,10 +22,10 @@ const Link = ({ page, selectedPage, setSelectedPage}) => {
 }
 
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
-    // mobileMode: check wether menu is toggled or not
+    // mobileMode: check whether menu is toggled or not
     const [isMenuToggled, setIsMenuToggled] = useState(false)
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)")
-    const navbarBackground = isTopOfPage ? "" : "bg-orange"
+    const navbarBackground = isTopOfPage ? "" : "bg-black text-white"
 
     return (
         <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -55,7 +55,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
-                            page="Contact me"
+                            page="Contact"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
@@ -94,7 +94,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                                 setSelectedPage={setSelectedPage}
                             />
                             <Link
-                                page="Contact me"
+                                page="Contact"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />

@@ -6,11 +6,11 @@ module.exports = {
     extend: {
       colors: {
         "dark-grey": "#757575",
-        "orange": "#FFA500"
+        "orange": "#FFA500",
       },
       fontFamily: {
         roboto: ["Roboto Mono", "serif"],
-        opensans: ["Open Sans", "sans-serif"]
+        opensans: ["Open Sans", "sans-serif"],
       }
     },
     screens: {

@@ -1,3 +1,4 @@
+import SocialMediaIcons from "./SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery"
 import {motion} from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -18,6 +19,7 @@ const Landing = ({setSelectedPage}) => {
                 ) : (
                 <img alt="profile" className="hover:animate-bounce z-10 w-full max-w-[400px] md:max-w-[600px]" src="../assets/profile.png" />
                 )}
+
             </div>
 
                 {/* MAIN SECTION */}
@@ -34,6 +36,55 @@ const Landing = ({setSelectedPage}) => {
                     }}
                     >
                         <p className= "text-6xl font-roboto z-10 text-center md:text-start">Panisara Sonkom</p>
+                        <p className="font-roboto mt-10 mb-7 text-md text-center md:text-start">
+                            Hi I'm Panisara! I design, develop, and turn ideas
+                            into impactful products
+                        </p>
+                    </motion.div>
+                    {/* CALL TO ACTIONS */}
+                    <motion.div
+                        className="flex mt-5 justify-center md:justify-start"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ delay:0.2, duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 },
+                        }}
+                    >
+                        <AnchorLink
+                        className="text-black border-2 border-black rounded-sm py-3 px-7 hover:border-orange
+                         transition duration-500"
+                        onClick={() => setSelectedPage("contact")}
+                        href="#contact"
+                        >
+                            Contact Me
+                        </AnchorLink>
+                        <AnchorLink
+                            className="rounded-r-sm border-2 border-black py-0.5 pr-0.5
+                            hover:border-orange transition duration-500"
+                            onClick={() => setSelectedPage("contact")}
+                            href="#contact"
+                        >
+                            <div className="w-full h-full flex items-center
+                            jusitfy-center font-calibre px-10">
+                                Let's Talk
+                            </div>
+                        </AnchorLink>
+                    </motion.div>
+                    <motion.div
+                        className="flex mt-5 justify-center md:justify-start"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 },
+                        }}
+                    >
+                        <SocialMediaIcons/>
 
                     </motion.div>
 
