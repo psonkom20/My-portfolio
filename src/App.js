@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar"
 import DotGroup from "./components/DotGroup"
 import Landing from "./components/Landing"
 import LineDivider from "./components/LineDivider"
+import AboutMe from "./components/AboutMe"
 import MySkills from "./components/MySkills"
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery"
@@ -17,18 +18,21 @@ function App() {
   //Check if scroll or not
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true)
+      if (window.scrollY === 0) {
+        setIsTopOfPage(true)
+        setSelectedPage("home")
+      }
       if (window.scrollY !== 0) setIsTopOfPage(false)
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  return <div className="app bg-white">
+  return (<div className="app bg-white">
     <Navbar
       isTopOfPage = {isTopOfPage}
       selectedPage= {selectedPage}
-      setSelectedPage= {selectedPage}
+      setSelectedPage= {setSelectedPage}
     />
     <div className= "w-5/6 mx-auto md:h-full">
       {isAboveMediumScreens && (
@@ -40,10 +44,15 @@ function App() {
       <Landing setSelectedPage={setSelectedPage} />
     </div>
     <LineDivider />
+    <div className="w-5/6 mx-auto md:h-auto">
+      <AboutMe />
+    </div>
+    <LineDivider />
     <div className="w-5/6 mx-auto md:h-full">
       <MySkills />
     </div>
   </div>
+  )
 
 }
 

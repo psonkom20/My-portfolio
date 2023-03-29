@@ -35,7 +35,7 @@ const Landing = ({setSelectedPage}) => {
                         visible:{opacity: 1, x: 0},
                     }}
                     >
-                        <p className= "text-6xl font-roboto z-10 text-center md:text-start">Panisara Sonkom</p>
+                        <p className= "text-6xl font-roboto z-10 text-center md:text-start">Panisara sonkom</p>
                         <p className="font-roboto mt-10 mb-7 text-md text-center md:text-start">
                             Hi I'm Panisara! I design, develop, and turn ideas
                             into impactful products

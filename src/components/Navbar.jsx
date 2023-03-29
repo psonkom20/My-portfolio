@@ -30,7 +30,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
     return (
         <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
             <div className= "flex items-center justify-between mx-auto w-5/6">
-                <h4 className= "font-roboto text-3xl">PS
+                <h4 className= "font-roboto text-2xl">panisara sonkom
                 <span className="text-orange text-4xl">.</span>
                 </h4>
                 {/* DESKTOP NAV */}
@@ -42,7 +42,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                         setSelectedPage = {setSelectedPage}
                         />
                         <Link
-                            page="About Me"
+                            page="About"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
@@ -81,7 +81,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                         {/* Menu Item */}
                         <div className= "flex flex-col gap-10 ml-[33%] text-2xl text-white">
                             <Link
-                                page="About Me"
+                                page="About"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />
