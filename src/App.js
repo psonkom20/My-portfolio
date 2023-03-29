@@ -4,6 +4,7 @@ import Landing from "./components/Landing"
 import LineDivider from "./components/LineDivider"
 import AboutMe from "./components/AboutMe"
 import MySkills from "./components/MySkills"
+import Projects from "./components/Projects"
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery"
 
@@ -44,12 +45,16 @@ function App() {
       <Landing setSelectedPage={setSelectedPage} />
     </div>
     <LineDivider />
-    <div className="w-5/6 mx-auto md:h-auto">
+    <div className="w-5/6 mx-auto md:h-full">
       <AboutMe />
     </div>
     <LineDivider />
     <div className="w-5/6 mx-auto md:h-full">
       <MySkills />
+    </div>
+    <LineDivider />
+    <div className="w-5/6 mx-auto">
+      <Projects />
     </div>
   </div>
   )

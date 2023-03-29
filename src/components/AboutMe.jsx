@@ -9,7 +9,7 @@ const AboutMe = () => {
     return (
         <section id="about" className="pt-10 pb-24">
             {/* HEADER */}
-            <div className="md:flex md:justify-between md:gap-16 mt-5">
+            <div className="md:flex md:justify-between md:gap-16 mt-32">
                 <motion.div
                     className="md:w-1/3 absolute"
                     initial="hidden"
@@ -26,11 +26,13 @@ const AboutMe = () => {
                         <span className="text-orange">.</span>
                     </p>
                     <LineDivider width="w-1/3"/>
-
                 </motion.div>
             </div>
+
             {/* BODY */}
             <div className="md:flex md:justify-between md:gap-16 mt-28 ">
+
+
                 <motion.div
                     className=""
                     initial="hidden"

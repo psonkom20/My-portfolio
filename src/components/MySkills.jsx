@@ -8,7 +8,7 @@ const MySkills = () => {
     return (
         <section id="skills" className="pt-10 pb-24">
             {/* HEADER SECTION */}
-            <div className="md:flex md:justify-between md:gap-16 mt-5">
+            <div className="md:flex md:justify-between md:gap-16 mt-32">
                 <motion.div
                     className="md:w-1/3 absolute"
                     initial="hidden"
@@ -24,12 +24,6 @@ const MySkills = () => {
                         MY TECH STACKS<span className="text-orange">.</span>
                     </p>
                     <LineDivider width="w-1/2"/>
-                    {/* <p className="mt-10 mb-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Unde itaque quisquam a, enim, vel iusto autem illo rerum
-                        quos, suscipit nisi velit ut consequatur aliquam perspic
-                        iatis repellat rem sed quia?
-                    </p> */}
                 </motion.div>
                 {/* SKILLs */}
             </div>
