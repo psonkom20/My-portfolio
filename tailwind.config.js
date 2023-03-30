@@ -8,6 +8,8 @@ module.exports = {
         "dark-grey": "#757575",
         "orange": "#FFA500",
         "grey": "#ededed",
+        "blue": "#E0FFFF"
+
       },
       fontFamily: {
         roboto: ["Roboto Mono", "serif"],

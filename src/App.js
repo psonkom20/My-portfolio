@@ -5,6 +5,8 @@ import LineDivider from "./components/LineDivider"
 import AboutMe from "./components/AboutMe"
 import MySkills from "./components/MySkills"
 import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery"
 
@@ -56,6 +58,11 @@ function App() {
     <div className="w-5/6 mx-auto">
       <Projects />
     </div>
+    <LineDivider />
+    <div className="w-5/6 mx-auto">
+      <Contact />
+    </div>
+    <Footer />
   </div>
   )
 
