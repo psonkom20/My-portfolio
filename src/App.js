@@ -9,6 +9,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery"
+import {motion} from "framer-motion"
 
 function App() {
 
@@ -44,23 +45,53 @@ function App() {
           setSelectedPage={setSelectedPage}
         />
       )}
-      <Landing setSelectedPage={setSelectedPage} />
+      <motion.div
+      margin="0 0 -200px 0"
+      amount="all"
+      onViewportEnter={() => setSelectedPage("home")}
+      >
+        <Landing setSelectedPage={setSelectedPage} />
+      </motion.div>
     </div>
     <LineDivider />
     <div className="w-5/6 mx-auto md:h-full">
-      <AboutMe />
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("about")}
+      >
+        <AboutMe />
+      </motion.div>
     </div>
     <LineDivider />
     <div className="w-5/6 mx-auto md:h-full">
-      <MySkills />
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("skills")}
+      >
+        <MySkills />
+      </motion.div>
     </div>
     <LineDivider />
     <div className="w-5/6 mx-auto">
-      <Projects />
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("projects")}
+      >
+        <Projects />
+      </motion.div>
     </div>
     <LineDivider />
     <div className="w-5/6 mx-auto">
-      <Contact />
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("contact")}
+      >
+        <Contact />
+      </motion.div>
     </div>
     <Footer />
   </div>

@@ -51,7 +51,7 @@ const Contact = () => {
                         visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <img src="../assets/contactPF.png"/>
+                    <img src="../assets/contactPF.png" alt="profile image"/>
                 </motion.div>
                 <motion.div
                     className="basis-1/2 mt-10 md:mt-0"
