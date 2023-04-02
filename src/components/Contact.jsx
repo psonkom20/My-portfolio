@@ -35,7 +35,7 @@ const Contact = () => {
                         Contact Me<span className="text-orange">.</span>
                     </p>
                 </div>
-                <LineDivider width="w-1/6" />
+                <LineDivider width="w-1/2" />
             </motion.div>
 
             {/* FORM AND IMAGE */}
@@ -54,7 +54,7 @@ const Contact = () => {
                     <img src="../assets/contactPF.png" alt="profile image"/>
                 </motion.div>
                 <motion.div
-                    className="basis-1/2 mt-10 md:mt-0"
+                    className="basis-1/2 mt-10 md:mt-0 items-center"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}

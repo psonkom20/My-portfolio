@@ -10,7 +10,7 @@ const AboutMe = () => {
             {/* HEADER */}
             <div className="md:flex md:justify-between md:gap-16 mt-32">
                 <motion.div
-                    className="md:w-1/3 absolute"
+                    className="md:w-1/2"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
