@@ -37,7 +37,7 @@ const Landing = ({setSelectedPage}) => {
                     >
                         <p className= "text-6xl font-roboto z-10 text-center md:text-start">Panisara sonkom</p>
                         <p className="font-roboto mt-10 mb-7 text-md text-center md:text-start">
-                            Hi I'm Panisara! I design, develop, and turn ideas
+                            Hi I'm Panisara (my friends call me Jina)! I design, develop, and turn ideas
                             into impactful products
                         </p>
                     </motion.div>
@@ -59,18 +59,7 @@ const Landing = ({setSelectedPage}) => {
                         onClick={() => setSelectedPage("contact")}
                         href="#contact"
                         >
-                            Contact Me
-                        </AnchorLink>
-                        <AnchorLink
-                            className="rounded-r-sm border-2 border-black py-0.5 pr-0.5
-                            hover:border-orange transition duration-500"
-                            onClick={() => setSelectedPage("contact")}
-                            href="#contact"
-                        >
-                            <div className="w-full h-full flex items-center
-                            jusitfy-center font-calibre px-10">
-                                Let's Talk
-                            </div>
+                            Let's talk
                         </AnchorLink>
                     </motion.div>
                     <motion.div

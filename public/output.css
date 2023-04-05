@@ -1089,6 +1089,10 @@ video {
   font-family: Roboto Mono, serif;
 }
 
+.font-opensans{
+  font-family: Open Sans, sans-serif;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1113,6 +1117,14 @@ video {
   font-weight: 600;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
+.leading-loose{
+  line-height: 2;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1126,6 +1138,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.decoration-wavy{
+  text-decoration-style: wavy;
 }
 
 .opacity-0{

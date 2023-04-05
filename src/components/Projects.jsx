@@ -56,12 +56,12 @@ const Projects = () => {
                     <LineDivider width="w-1/3" />
 
                 </div>
-                <p className="mt-10 mb-10">
+                {/* <p className="mt-10 mb-10">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Unde itaque quisquam a, enim, vel iusto autem illo rerum
                         quos, suscipit nisi velit ut consequatur aliquam perspic
                         iatis repellat rem sed quia?
-                    </p>
+                    </p> */}
             </motion.div>
 
             {/* PROJECTS */}

@@ -43,13 +43,22 @@ const AboutMe = () => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <p className=" font-roboto  text-xl mb-5">
-                        Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Laboriosam unde hic
-                        quidem perferendis atque odio quis
-                        nobis harum, maxime nemo laudantium
-                        corporis a at? Doloribus, quasi.
-                        Cumque cum explicabo tempora.
+                    <p className="font-roboto text-6xl font-bold mb-5">
+                        Humastic problem-solver 🧐
+
+                    </p>
+                    <p className="font-roboto text-6xl font-bold mb-5">
+                        Life-long learner 🔎
+
+                    </p>
+                    <p className=" font-roboto  text-xl mb-5 leading-loose">
+                        Hi! 👋🏼 I'm Panisara, a  front-end developer
+                        and product designer based in Sydney, Australia.
+                        I'm passionate about turning ideas into meaningful
+                        products with strong social impact. I love working
+                        collaboratively and thrive in a dynamic environment.
+                        I'm always up for a challenge, so catch me (a beginner 🤓)
+                        attempting a V6 problem at the bouldering gym.
 
                     </p>
 
