@@ -31,7 +31,7 @@ const Contact = () => {
                 }}
             >
                 <div>
-                    <p className="font-roboto font-semibold text-4xl mb-5">
+                    <p className="font-roboto font-semibold text-4xl mb-5 text-black">
                         Contact Me<span className="text-orange">.</span>
                     </p>
                 </div>
@@ -39,7 +39,7 @@ const Contact = () => {
             </motion.div>
 
             {/* FORM AND IMAGE */}
-            <div className=" md:flex md:jusitfy-between gap-16 mt-5">
+            <div className="md:flex md:jusitfy-between gap-16 mt-5">
                 <motion.div
                     className="basis-1/2 flex items-center"
                     initial="hidden"

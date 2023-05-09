@@ -10,7 +10,7 @@ const AboutMe = () => {
             {/* HEADER */}
             <div className="md:flex md:justify-between md:gap-16 mt-32">
                 <motion.div
-                    className="md:w-1/2"
+                    className="w-5/6 mx-auto md:h-full"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -20,11 +20,12 @@ const AboutMe = () => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <p className=" font-roboto font-semibold text-4xl mb-5">
+
+                    <p className="font-roboto font-semibold text-4xl mb-5 text-black">
                         About Me
                         <span className="text-orange">.</span>
                     </p>
-                    <LineDivider width="w-1/3"/>
+                    <LineDivider width="w-1/2"/>
                 </motion.div>
             </div>
 
@@ -33,7 +34,7 @@ const AboutMe = () => {
 
 
                 <motion.div
-                    className=""
+                    className="w-5/6 mx-auto md:h-full"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -43,15 +44,15 @@ const AboutMe = () => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <p className="font-roboto text-6xl font-bold mb-5">
+                    <p className="font-roboto text-6xl font-bold mb-5  text-black">
                         Humastic problem-solver 🧐
 
                     </p>
-                    <p className="font-roboto text-6xl font-bold mb-5">
+                    <p className="font-roboto text-6xl font-bold mb-7  text-black">
                         Life-long learner 🔎
 
                     </p>
-                    <p className=" font-roboto  text-xl mb-5 leading-loose">
+                    <p className=" font-roboto  text-xl mb-5 leading-loose  text-black">
                         Hi! 👋🏼 I'm Panisara, a  front-end developer
                         and product designer based in Sydney, Australia.
                         I'm passionate about turning ideas into meaningful

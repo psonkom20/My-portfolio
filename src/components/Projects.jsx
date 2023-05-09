@@ -48,12 +48,12 @@ const Projects = () => {
                 }}
             >
                 <div>
-                    <p className="font-roboto font-semibold text-4xl mb-5">
+                    <p className="w-5/6 mx-auto font-roboto font-semibold text-black text-4xl mb-5">
                         Projects<span className="text-orange">.</span>
                     </p>
                 </div>
-                <div className="flex justify-center mt-5">
-                    <LineDivider width="w-1/3" />
+                <div className="flex justify-center mt-5 mb-5">
+                    <LineDivider width="w-1/3"/>
 
                 </div>
                 {/* <p className="mt-10 mb-10">
@@ -65,7 +65,7 @@ const Projects = () => {
             </motion.div>
 
             {/* PROJECTS */}
-            <div className="flex justify-center">
+            <div className="w-5/6 mx-auto flex justify-center">
                 <motion.div
                     className="sm:grid sm:grid-cols-3"
                     initial="hidden"

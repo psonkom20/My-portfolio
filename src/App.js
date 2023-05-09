@@ -74,7 +74,7 @@ function App() {
       </motion.div>
     </div>
     <LineDivider />
-    <div className="w-5/6 mx-auto">
+    <div className="">
       <motion.div
         margin="0 0 -200px 0"
         amount="all"

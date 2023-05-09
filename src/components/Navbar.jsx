@@ -24,7 +24,7 @@ const Link = ({ page, selectedPage, setSelectedPage}) => {
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
     // mobileMode: check whether menu is toggled or not
     const [isMenuToggled, setIsMenuToggled] = useState(false)
-    const isAboveSmallScreens = useMediaQuery("(min-width: 768px)")
+    const isDesktop = useMediaQuery("(min-width: 768px)")
     const navbarBackground = isTopOfPage ? "" : "bg-black text-white"
 
     return (
@@ -34,7 +34,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                 <span className="text-orange text-4xl">.</span>
                 </h4>
                 {/* DESKTOP NAV */}
-                {isAboveSmallScreens ? (
+                {isDesktop ? (
                     <div className= "flex justify-between gap-16 font-roboto text-md">
                         <Link
                         page = "Home"
@@ -64,12 +64,12 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                     </div>
                 ) : (
                 <button className="rounded-full bg-orange p-2"
-                        onCLick={() => setIsMenuToggled(!isMenuToggled)}>
+                        onClick={() => setIsMenuToggled(!isMenuToggled)}>
                             <img src= "../assets/menu-icon.svg" />
                 </button>
                 )}
                 {/* Mobile menu popup */}
-                {!isAboveSmallScreens && isMenuToggled && (
+                {!isDesktop && isMenuToggled && (
                     <div className="fixed right-0 bottom-0 h-full bg-black w-[300px]">
                         {/* Close Icon */}
                         <div className= "flex justify-end p-12">
@@ -79,7 +79,12 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
 
                         </div>
                         {/* Menu Item */}
-                        <div className= "flex flex-col gap-10 ml-[33%] text-2xl text-white">
+                        <div className= "flex flex-col gap-10 ml-[33%] text-2xl text-white font-roboto">
+                            <Link
+                                page="Home"
+                                selectedPage={selectedPage}
+                                setSelectedPage={setSelectedPage}
+                            />
                             <Link
                                 page="About"
                                 selectedPage={selectedPage}
