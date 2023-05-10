@@ -1355,6 +1355,10 @@ body,
     width: 50%;
   }
 
+  .md\:w-2\/5{
+    width: 40%;
+  }
+
   .md\:max-w-\[600px\]{
     max-width: 600px;
   }

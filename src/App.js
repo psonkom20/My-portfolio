@@ -14,10 +14,10 @@ import {motion} from "framer-motion"
 function App() {
 
   // Determine which page of the webpage we're on
-  const [selectedPage, setSelectedPage] = useState('home')
+  const [selectedPage, setSelectedPage] = useState("home")
   const [isTopOfPage, setIsTopOfPage] = useState(true)
   // Check if user screen size is bigger or smaller than 1060px
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
+  const isDesktop = useMediaQuery("(min-width: 1060px)")
 
   //Check if scroll or not
   useEffect(() => {
@@ -39,7 +39,7 @@ function App() {
       setSelectedPage= {setSelectedPage}
     />
     <div className= "w-5/6 mx-auto md:h-full">
-      {isAboveMediumScreens && (
+      {isDesktop && (
         <DotGroup
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
@@ -74,7 +74,7 @@ function App() {
       </motion.div>
     </div>
     <LineDivider />
-    <div className="">
+    <div className="w-5/6 mx-auto md:h-full">
       <motion.div
         margin="0 0 -200px 0"
         amount="all"
@@ -84,7 +84,7 @@ function App() {
       </motion.div>
     </div>
     <LineDivider />
-    <div className="w-5/6 mx-auto">
+    <div className="w-5/6 mx-auto md:h-full">
       <motion.div
         margin="0 0 -200px 0"
         amount="all"
