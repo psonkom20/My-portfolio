@@ -13,7 +13,7 @@ const Link = ({ page, selectedPage, setSelectedPage}) => {
             // Identify which section we're going to move to
             href={`#${lowerCasePage}`}
             // change useState to whichever page is selected
-            onCLick={() => setSelectedPage(lowerCasePage)}
+            onClick={() => setSelectedPage(lowerCasePage)}
         >
             {page}
         </AnchorLink>

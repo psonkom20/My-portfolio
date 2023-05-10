@@ -11,39 +11,39 @@ const DotGroup = ({selectedPage, setSelectedPage}) => {
             // Identify which section we're going to move to
             href= "#home"
             // change useState to whichever page is selected
-            onCLick={() => setSelectedPage('home')}
+            onClick={() => setSelectedPage('home')}
         />
         <AnchorLink
-            className={`${selectedPage === 'about me' ? selectedStyles : "bg-dark-grey"}
+            className={`${selectedPage === 'about' ? selectedStyles : "bg-dark-grey"}
             w-3 h-3 rounded-full`}
             // Identify which section we're going to move to
-            href="#home"
+            href="#about"
             // change useState to whichever page is selected
-            onCLick={() => setSelectedPage('about me')}
+            onClick={() => setSelectedPage('about')}
         />
         <AnchorLink
             className={`${selectedPage === 'skills' ? selectedStyles : "bg-dark-grey"}
             w-3 h-3 rounded-full`}
             // Identify which section we're going to move to
-            href="#home"
+            href="#skills"
             // change useState to whichever page is selected
-            onCLick={() => setSelectedPage('skills')}
+            onClick={() => setSelectedPage('skills')}
         />
         <AnchorLink
             className={`${selectedPage === 'projects' ? selectedStyles : "bg-dark-grey"}
             w-3 h-3 rounded-full`}
             // Identify which section we're going to move to
-            href="#home"
+            href="#projects"
             // change useState to whichever page is selected
-            onCLick={() => setSelectedPage('projects')}
+            onClick={() => setSelectedPage('projects')}
         />
         <AnchorLink
-            className={`${selectedPage === 'contact me' ? selectedStyles : "bg-dark-grey"}
+            className={`${selectedPage === 'contact' ? selectedStyles : "bg-dark-grey"}
             w-3 h-3 rounded-full`}
             // Identify which section we're going to move to
-            href="#home"
+            href="#contact"
             // change useState to whichever page is selected
-            onCLick={() => setSelectedPage('contact me')}
+            onClick={() => setSelectedPage('contact')}
         />
     </div>
 }
